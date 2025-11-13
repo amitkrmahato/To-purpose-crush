@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Marry Me, [Crush's Name]?</title>
+    <title>Will You Marry Me, [Crush's Name]? - Crazy Edition!</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    <audio id="bgMusic" loop>
+        <source src="your-romantic-song.mp3" type="audio/mpeg"> <!-- Replace with your song URL, e.g., from a free site like freesound.org -->
+    </audio>
     <div class="container">
         <h1>Dear [Crush's Name],</h1>
-        <p>From the moment I met you, my world changed. You've brought so much joy into my life, and I can't imagine a future without you.</p>
-        <img src="your-photo-url.jpg" alt="A photo of us" class="photo">
-        <p>So, [Crush's Name], will you make me the happiest person ever?</p>
-        <button id="yesBtn">Yes!</button>
-        <button id="noBtn">No</button>
+        <p>From the moment I met you, my world changed. You've brought so much joy into my life, and I can't imagine a future without you. Let's make this epic!</p>
+        <img src="your-photo-url.jpg" alt="A photo of us" class="photo bounce">
+        <p>So, [Crush's Name], will you make me the happiest person ever? (Click carefully!)</p>
+        <button id="yesBtn">Yes! 💥</button>
+        <button id="noBtn">No 😏</button>
         <div id="response" class="hidden"></div>
+        <div id="surprise" class="hidden">Surprise! Here's a virtual hug: 🤗</div>
     </div>
     <script src="script.js"></script>
 </body>
